@@ -3,8 +3,7 @@ import './App.css';
 import {useState} from 'react'
 
 
-
-function App() {
+const App=()=> {
   // set the state varialbe of the todo
 
   const [todos, setTodos] = useState([
@@ -20,14 +19,14 @@ function App() {
 
   
 
-  function addTodo(text){
+  const addTodo=(text)=>{
     const newTodos = [...todos,{text}];
     setTodos(newTodos);
   }
 
   
 
-  function completeTodo(index){
+ const completeTodo=(index)=>{
 
     const newTodos = [...todos];
 
@@ -37,8 +36,7 @@ function App() {
 
   }
 
-
-  function removeTodo(index) {
+const removeTodo=(index) =>{
     const newTodos = [...todos];
 
     newTodos.splice(index,1);// i found a way around using
@@ -60,13 +58,11 @@ function App() {
   }
   
   
-  
-  function TodoForm({addTodo}){
+  const TodoForm=({addTodo})=>{
   
     const [value,setValue] = useState("")
   
-  
-    function handleSubmit() {
+  const handleSubmit=() =>{
       if(!value) return;
   
       addTodo(value)
