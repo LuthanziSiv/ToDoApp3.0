@@ -1,0 +1,33 @@
+//  const App=()=> {
+//   const [listOfTodos,setList]=useState(['get water'])
+//   const inputRef= useRef();
+
+//   const addTodos=()=> {
+//     if (inputRef.current.value=== ''){
+//       window.alert('Input cannot be empty');
+//     }else{
+//       setList([...listOfTodos,inputRef.current.value]);
+//     }
+//     setList([...listOfTodos,inputRef.curent.value])
+//     }
+  
+//   const removetodos =(element)=> {
+//     setList(listOfTodos.filter(x=> x!==element));
+//     const newTodo=setList([...listOfTodos.inputRef.curent.value]);
+//     return(newTodo)
+//   }
+  
+
+  
+  
+
+// return (
+//   <div>
+//     <ol>
+//       <li>{setList}</li>
+//     </ol>
+//     <input/>
+//     <button>"Submit"</button>
+//   </div>
+// )
+//  }
